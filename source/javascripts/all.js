@@ -9,7 +9,7 @@ var controller = new ScrollMagic.Controller();
 var pinBcg1 = new ScrollMagic.Scene({
   triggerElement: '.bcg1',
   triggerHook: 0,
-  duration: 200
+  duration: '100%'
 })
   .setPin('.bcg1')
   .addIndicators({

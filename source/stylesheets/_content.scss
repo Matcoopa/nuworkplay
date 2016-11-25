@@ -1,36 +1,7 @@
-/* =Header */
-
-/* =Content Block */
-.content-block {
-  background-color: #212121;
-  color: rgba(255, 255, 255, 0.9); }
-  .content-block .wrapper {
-    // padding: 30px 0;
-    // text-align: center;
-  }
-  .no-touch .content-block .wrapper {
-    visibility: hidden;
-    opacity: 0; }
-  .no-touch .content-block.is-active .wrapper {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-
-    /* =Simple animation up */
-    .no-touch .slideInUp {
-      visibility: hidden;
-      opacity: 0;
-      -webkit-transition: all 0.7s ease-out;
-              transition: all 0.7s ease-out;
-      -webkit-transform: translate3d(0, 50px, 0);
-      transform: translate3d(0, 50px, 0); }
-    .no-touch .is-active .slideInUp {
-      visibility: visible;
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0); }
-    .slideInUp.slideInUp2 {
-      -webkit-transition-delay: 0.2s;
-              transition-delay: 0.2s; }
-    
+// /* =Header */
+//
+// /* =Content Block */
+.wrapper {
+  z-index: 5;
+  background-color: $blue;
+}

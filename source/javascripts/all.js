@@ -5,23 +5,25 @@ $(document).ready(function(){
 var controller = new ScrollMagic.Controller();
 
 // pin bcg1
+
 var pinBcg1 = new ScrollMagic.Scene({
-  triggerElement: '.bcg-parallax',
+  triggerElement: '.bcg1',
   triggerHook: 0,
-  duration: '50%'
+  duration: 200
 })
   .setPin('.bcg1')
-  .addIndicators()
+  .addIndicators({
+    name: 'bcg1'
+  })
   .addTo(controller);
 
 
 
 var pinBcg2 = new ScrollMagic.Scene({
   triggerElement: '.bcg2',
-  triggerHook: 0,
-  duration: 300
+  triggerHook: 0
 })
-  .setPin('bcg2')
+  .setPin('.bcg2')
   .addIndicators()
   .addTo(controller);
 

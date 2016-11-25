@@ -1,14 +1,11 @@
-.headline {
-
-}
 
 .content-wrapper {
   background-color: $blue;
   height: 200px;
   position: relative;
+  z-index: 2;
 }
 
 .content {
   @include outer-container();
-  // z-index: 2;
 }

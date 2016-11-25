@@ -1,28 +1,32 @@
 
 .bcg-parallax {
-  height:100vh;
-  color: #fff;
-  background-color: #000;
+  // height:100vh;
+  // color: #fff;
+  // background-color: #000;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .bcg1 {
   background: image-url('Aljezur.jpg') no-repeat;
   background-size: cover;
   background-position: 75%;
-  // position: absolute;
-  height: 100vh;
-  // top: 0;
-  // z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
 }
 
 .bcg2 {
   background: image-url('Lisboabridge.jpg') no-repeat;
   background-size: cover;
   background-position: 0%;
-  // position: absolute;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.fs {
   height: 100vh;
-  // top: 0;
-  // z-index: 1;
 }

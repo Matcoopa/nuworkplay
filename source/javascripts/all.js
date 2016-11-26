@@ -60,4 +60,27 @@
  		});
 
 
+
+<!-- for button click to reach contact form -->
+
+	$("a[id='button-cta']").click(function(){
+		   target='#cb02';
+		   tar=target.split("#");
+		   targetSection=tar[1];
+		   if (!targetSection || targetSection == '') {
+                return;
+            }else
+			{
+				targetSection = '#' + targetSection;
+				var targetOffset = Math.floor($(targetSection).offset().top );
+				var targetOffset1 = targetOffset - 65;
+				//scroll
+				$('html,body').animate({scrollTop: targetOffset1}, 1200, function() {
+
+					$(window).scroll();
+
+				});
+				return false;
+			}
+		})
 });

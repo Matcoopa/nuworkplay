@@ -60,3 +60,6 @@ activate :deploy do |deploy|
 end
 
 set :relative_links, true
+
+#partials folder
+# set :partials_dir, 'shared'

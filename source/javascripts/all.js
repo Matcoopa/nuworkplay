@@ -60,27 +60,30 @@
  		});
 
 
+    // Modal activation from Bourbon/Refills
 
-<!-- for button click to reach contact form -->
+    $(function() {
+      $("#modal-1").on("change", function() {
+        if ($(this).is(":checked")) {
+          $("body").addClass("modal-open");
+        } else {
+          $("body").removeClass("modal-open");
+        }
+      });
 
-	$("a[id='button-cta']").click(function(){
-		   target='#cb02';
-		   tar=target.split("#");
-		   targetSection=tar[1];
-		   if (!targetSection || targetSection == '') {
-                return;
-            }else
-			{
-				targetSection = '#' + targetSection;
-				var targetOffset = Math.floor($(targetSection).offset().top );
-				var targetOffset1 = targetOffset - 65;
-				//scroll
-				$('html,body').animate({scrollTop: targetOffset1}, 1200, function() {
+      $(".modal-fade-screen, .modal-close").on("click", function() {
+        $(".modal-state:checked").prop("checked", false).change();
+      });
 
-					$(window).scroll();
+      $(".modal-inner").on("click", function(e) {
+        e.stopPropagation();
+      });
+    });
 
-				});
-				return false;
-			}
-		})
+
+
+
+
+
+
 });

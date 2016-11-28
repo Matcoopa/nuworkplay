@@ -2,10 +2,10 @@
 
 /* =Header */
 .header-container {
-  text-align: center;
-  color: #ffffff; }
+  // text-align: center;
+  overflow: hidden;
+  position: relative; }
   .header-container .wrapper {
-    padding-top: 120px;
     z-index: 2;
     position: relative; }
 
@@ -16,7 +16,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 0.5; }
+  opacity: 1; }
   .header-container .bcg {
     background-image: image-url('Aljezur.jpg');
     background-size: cover; }
@@ -24,94 +24,33 @@
     background: image-url('Lisboabridge.jpg') no-repeat center center;
     background-size: cover; }
 
-
-/* =Main */
-
-
 .fs {
-  height: 100vh; }
+  height: 100vh;
+}
 
+
+/* =Content Block */
+.content-block {
+  background-color: #212121;
+  color: rgba(255, 255, 255, 0.9);}
+
+/* =Slide */
 .slide {
-  color: #ffffff;
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+}
   .slide .wrapper {
-    padding-top: 30px;
-    text-align: center;
     position: relative;
     z-index: 2; }
   .slide#slide01 .wrapper {
     position: absolute;
     top: 10%; }
 
-/* =Content Block */
-.content-block {
-  background-color: #212121;
-  color: rgba(255, 255, 255, 0.9);}
-  .content-block .wrapper {
-    padding: 30px 0;
-    text-align: center; }
-  .no-touch .content-block .wrapper {
-    visibility: hidden;
-    opacity: 0; }
-  .no-touch .content-block.is-active .wrapper {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+
+/* =Content block form */
 
   #cb02 {
     position: absolute;
     width: 100vw;
   }
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-// @media only screen and (min-width: 768px) {
-  body {
-    font-weight: 100; }
-  h1 {
-    font-size: 3em; }
-  p {
-    font-size: 20px; }
-  /* =Header */
-  .header-container {
-    overflow: hidden;
-    position: relative; }
-    .header-container .wrapper {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -120%);
-          -ms-transform: translate(-50%, -120%);
-              transform: translate(-50%, -120%);
-      margin: 0;
-      padding: 0; }
-    .header-container:before {
-      font-size: 70em; }
-  .scroll-hint {
-    font-size: 20px; }
-  .bcg {
-    opacity: 1; }
-  .slide {
-    overflow: hidden;
-    overflow-x: hidden; }
-    .slide section {
-      max-width: 400px; }
-    .slide .wrapper {
-      padding-top: 120px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      text-align: left;
-      width: 100%;
-      margin: 0; }
-      .slide#slide01 .wrapper {
-        top: 20%;
-        text-align: center; }
-      .slide#slide01 section {
-        margin: 0 auto; }
-    // }

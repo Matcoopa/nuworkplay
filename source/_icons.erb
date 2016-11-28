@@ -5,8 +5,13 @@
     </div>
     <div class="bullet-content">
       <h2>Living</h2>
-      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
-      </div>
+      <ul>
+        <% data.living.benefits.each do |benefit| %>
+        <li>
+          <p> <%= benefit %></p>
+        </li>
+        <% end %>
+      </ul>
   </li>
   <li class="bullet">
     <div class="bullet-icon bullet-icon-2">
@@ -14,7 +19,13 @@
     </div>
     <div class="bullet-content">
       <h2>Working</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+      <ul>
+        <% data.working.benefits.each do |benefit| %>
+        <li>
+          <p> <%= benefit %></p>
+        </li>
+        <% end %>
+      </ul>
     </div>
   </li>
   <li class="bullet">
@@ -23,7 +34,12 @@
     </div>
     <div class="bullet-content">
       <h2>Playing</h2>
-      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
-    </div>
+      <ul>
+        <% data.playing.benefits.each do |benefit| %>
+        <li>
+          <p> <%= benefit %></p>
+        </li>
+        <% end %>
+      </ul>
   </li>
 </ul>

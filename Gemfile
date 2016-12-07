@@ -19,12 +19,13 @@ gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
+gem 'middleman-autoprefixer'
 
 gem 'middleman-sprockets', '4.0.0.rc.3'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', '2.1.1'
-# useful carousel  
+# useful carousel
   gem 'rails-assets-slick.js', '1.5.7'
 end
 

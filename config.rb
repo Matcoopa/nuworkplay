@@ -63,3 +63,8 @@ set :relative_links, true
 
 #partials folder
 # set :partials_dir, 'shared'
+
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+  config.ignore   = ['/stylesheets/hacks.css']
+end

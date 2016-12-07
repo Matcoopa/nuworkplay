@@ -1,0 +1,45 @@
+<ul class="bullets">
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-1">
+      <%= image_tag 'Living.png' %>
+    </div>
+    <div class="bullet-content">
+      <h2>Living</h2>
+      <ul>
+        <% data.living.benefits.each do |benefit| %>
+        <li>
+          <p> <%= benefit %></p>
+        </li>
+        <% end %>
+      </ul>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-2">
+      <%= image_tag 'Working.png' %>
+    </div>
+    <div class="bullet-content">
+      <h2>Working</h2>
+      <ul>
+        <% data.working.benefits.each do |benefit| %>
+        <li>
+          <p> <%= benefit %></p>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-3">
+      <%= image_tag 'Playing.png' %>
+    </div>
+    <div class="bullet-content">
+      <h2>Playing</h2>
+      <ul>
+        <% data.playing.benefits.each do |benefit| %>
+        <li>
+          <p> <%= benefit %></p>
+        </li>
+        <% end %>
+      </ul>
+  </li>
+</ul>

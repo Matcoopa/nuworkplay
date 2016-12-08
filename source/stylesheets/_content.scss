@@ -1,4 +1,7 @@
 
+$mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(max-width 768px 4);
+
 /* =Header */
 .header-container {
   // text-align: center;
@@ -6,7 +9,26 @@
   position: relative; }
   .header-container .wrapper {
     z-index: 2;
-    position: relative; }
+    position: relative;
+    }
+
+.logo {
+  width: 20vw;
+  padding-top: 15vh;
+  padding-bottom: 20vh;
+  /* media query mixin for mobile screens */
+     @include media($mobile) {
+       width: 50vw;
+       padding-top: 10vh;
+       padding-bottom: 15vh;
+    }
+    /* media query mixin for tablet screens */
+       @include media($tablet) {
+         width: 50vw;
+         padding-top: 10vh;
+         padding-bottom: 15vh;
+      }
+}
 
 .bcg {
   background: no-repeat center center;

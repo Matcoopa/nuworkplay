@@ -1,5 +1,19 @@
 .cta-form {
   position: absolute;
-  top: 50vh;
+  top: 80vh;
   z-index: 10;
+  @include outer-container(100%);
+  @include shift(4);
+  @include span-columns(4);
+  text-align: center;
+  @include border-width(5px);
+  @include border-style(solid);
+  @include border-color(#fff);
+}
+
+.modal-trigger {
+  h1 {
+    margin-bottom: auto;
+    color: #fff;
+  }
 }

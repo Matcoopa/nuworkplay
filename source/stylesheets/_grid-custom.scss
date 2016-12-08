@@ -1,0 +1,6 @@
+.grid-center {
+  @include outer-container(100%);
+  @include shift(2);
+  @include span-columns(8);
+  text-align: center;
+}

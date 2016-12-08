@@ -3,8 +3,8 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$base-font-family: 'Montserrat', sans-serif;
+$heading-font-family: 'Oswald', sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -24,6 +24,7 @@ $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$white: #fff;
 
 // Font Colors
 $base-font-color: $dark-gray;

@@ -1,110 +1,75 @@
 //
 $mobile: new-breakpoint(max-width 480px 4);
 $tablet: new-breakpoint(max-width 768px 4);
-//
-// /* =Header */
-// .header-container {
-//   // text-align: center;
-//   overflow: hidden;
-//   position: relative; }
-//   .header-container .wrapper {
-//     z-index: 2;
-//     position: relative;
-//     }
-//
-.logo {
-  width: 20vw;
-  padding-top: 15vh;
-  padding-bottom: 20vh;
-  /* media query mixin for mobile screens */
-     @include media($mobile) {
-       width: 50vw;
-       padding-top: 10vh;
-       padding-bottom: 15vh;
-    }
-    /* media query mixin for tablet screens */
-       @include media($tablet) {
-         width: 50vw;
-         padding-top: 10vh;
-         padding-bottom: 15vh;
-      }
+
+.desaturate {
+	filter: gray;
+	filter: grayscale(100%);
 }
 
+.backgrounds div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .hero-bcg {
-   background: image-url('Aljezur.jpg') no-repeat center center;
-   background-size: cover;
-   height: 100vh;
-   overflow: scroll;
-   z-index: 5;
+  background: image-url('Aljezur.jpg');
 }
 
-.hero-headline {
+.logo img {
+  width: 100px;
+  height: 100px;
   position: absolute;
-  top: 0;
-  z-index: 10;
+  top: 40px;
+  left: 40px;
+  z-index: 200;
 }
 
-.content-pitch {
+.outer-wrap {
+  @include outer-container(100%);
+  position: fixed;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  overflow: scroll;
+  border: 10px solid #fff;
+    @include media($mobile) {
+      position: relative;
+      min-height: 100%;
+    };
+}
+
+.inner-wrap {
+  @include span-columns(10);
+  @include shift(1);
+  padding: 70px;
+  background: $blue;
   position: absolute;
-  top: 100vh;
+  top:50%;
+  transform: translate(0, -50%);
 }
 
-.feat-bcg {
-   background: image-url('Lisboabridge.jpg') no-repeat center center;
-   background-size: cover;
-   height: 100vh;
-   overflow: scroll;
-   position: fixed;
-   top: 0;
-   z-index: 2;
-}
-//
-// .bcg {
-//   background: no-repeat center center;
-//   background-size: cover;
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 1;
-//   opacity: 1; }
-//   .header-container .bcg {
-//     background-image: image-url('Aljezur.jpg');
-//     background-size: cover; }
-//   #slide01 .bcg {
-//     background: image-url('Lisboabridge.jpg') no-repeat center center;
-//     background-size: cover; }
-//
-// .fs {
-//   height: 100vh;
+
+// .logo {
+//   width: 20vw;
+//   padding-top: 15vh;
+//   padding-bottom: 20vh;
+//   /* media query mixin for mobile screens */
+//      @include media($mobile) {
+//        width: 50vw;
+//        padding-top: 10vh;
+//        padding-bottom: 15vh;
+//     }
+//     /* media query mixin for tablet screens */
+//        @include media($tablet) {
+//          width: 50vw;
+//          padding-top: 10vh;
+//          padding-bottom: 15vh;
+//       }
 // }
-//
-//
-// /* =Content Block */
-// .content-block {
-//   background-color: $white;
-//   color: $dark-gray;
-//   overflow: scroll;
-//   padding: 20px 0 20px 0;
-// }
-// /* =Slide */
-// .slide {
-//   position: relative;
-//   overflow: hidden;
-//   overflow-x: hidden;
-// }
-//   .slide .wrapper {
-//     position: relative;
-//     z-index: 2; }
-//   .slide#slide01 .wrapper {
-//     position: absolute;
-//     top: 10%; }
-//
-//
-// /* =Content block form */
-//
-//   #cb02 {
-//     position: absolute;
-//     width: 100vw;
-//     padding: 20px 0 20px 0;
-//   }

@@ -2,17 +2,17 @@
 $(document).ready(function(){
 
 // Init ScrollMagic
-  var controller = new ScrollMagic.Controller();
+  // var controller = new ScrollMagic.Controller();
 
 // Create Pin Scene for Intro background-color
-  var pinIntro = new ScrollMagic.Scene({
-           triggerElement: '.hero-headline',
-           triggerHook: 0,
-           duration: '50%',
-       })
-       .setPin('.hero-bcg')
-       .addIndicators()
-       .addTo(controller);
+  // var pinIntro = new ScrollMagic.Scene({
+  //          triggerElement: '.hero-headline',
+  //          triggerHook: 0,
+  //          duration: '50%',
+  //      })
+  //      .setPin('.hero-bcg')
+  //      .addIndicators()
+  //      .addTo(controller);
 
 
  	// 		var $bcg = $('#slide01').find('.bcg');

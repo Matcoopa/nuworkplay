@@ -1,6 +1,6 @@
 //
-$mobile: new-breakpoint(max-width 480px 4);
-$tablet: new-breakpoint(max-width 768px 4);
+$mobile: new-breakpoint(max-width 768px 4);
+// $tablet: new-breakpoint(max-width 768px 4);
 
 .desaturate {
 	filter: gray;
@@ -19,16 +19,19 @@ $tablet: new-breakpoint(max-width 768px 4);
 }
 
 .hero-bcg {
-  background: image-url('Aljezur.jpg');
+  background: image-url('Vilanovagaia.jpg');
 }
 
 .logo img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: auto;
   position: absolute;
   top: 40px;
   left: 40px;
-  z-index: 200;
+  z-index: 2;
+	@include media($mobile) {
+		width: 150px;
+	};
 }
 
 .outer-wrap {
@@ -38,7 +41,6 @@ $tablet: new-breakpoint(max-width 768px 4);
   min-height: 100vh;
   width: 100%;
   overflow: scroll;
-  border: 10px solid #fff;
     @include media($mobile) {
       position: relative;
       min-height: 100%;
@@ -48,13 +50,28 @@ $tablet: new-breakpoint(max-width 768px 4);
 .inner-wrap {
   @include span-columns(10);
   @include shift(1);
-  padding: 70px;
-  background: $blue;
+  padding: 50px;
+  background: RGBA(228, 187, 37, 0.60);
+	background-blend-mode: difference;;
   position: absolute;
   top:50%;
   transform: translate(0, -50%);
+	height: 50vh;
+	@include media($mobile) {
+		padding: 20px;
+	};
 }
 
+.wrap {
+	color: $white;
+	h1 {
+	color: RGBA(0, 0, 0, 1);
+	font-size: 40px;
+	}
+	p {
+	font-size: 12px;
+	}
+}
 
 // .logo {
 //   width: 20vw;

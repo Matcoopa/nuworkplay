@@ -24,7 +24,7 @@ $tablet: new-breakpoint(max-width 768px 4);
 
 .logo img {
   width: 100px;
-  height: 100px;
+  height: auto;
   position: absolute;
   top: 40px;
   left: 40px;
@@ -48,11 +48,14 @@ $tablet: new-breakpoint(max-width 768px 4);
 .inner-wrap {
   @include span-columns(10);
   @include shift(1);
-  padding: 70px;
-  background: $blue;
+  padding: 50px;
+  background: #86AF49;
   position: absolute;
   top:50%;
   transform: translate(0, -50%);
+	@include media($mobile) {
+		padding: 30px;
+	};
 }
 
 

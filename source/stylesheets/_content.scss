@@ -111,5 +111,6 @@ $mobile: new-breakpoint(max-width 768px 4);
 }
 
 .content-wrap {
+	position: absolute;
 	background: $white;
 }

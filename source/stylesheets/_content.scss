@@ -23,11 +23,14 @@ $mobile: new-breakpoint(max-width 768px 4);
 }
 
 .logo img {
-  width: 300px;
+	// @include outer-container(100%);
+	@include shift(1);
+
+  width: 200px;
   height: auto;
   position: absolute;
   top: 40px;
-  left: 40px;
+  // left: 40px;
   z-index: 2;
 	@include media($mobile) {
 		width: 150px;
@@ -36,11 +39,11 @@ $mobile: new-breakpoint(max-width 768px 4);
 
 .outer-wrap {
   @include outer-container(100%);
-  position: fixed;
+  // position: fixed;
   height: 100%;
   min-height: 100vh;
   width: 100%;
-  overflow: scroll;
+  // overflow: scroll;
     @include media($mobile) {
       position: relative;
       min-height: 100%;
@@ -65,28 +68,48 @@ $mobile: new-breakpoint(max-width 768px 4);
 .wrap {
 	color: $white;
 	h1 {
-	color: RGBA(0, 0, 0, 1);
-	// font-size: 40px;
+	color: $white;
+	@include media($mobile) {
+		font-size: 20px;}
 	}
 	p {
-	// font-size: 12px;
+		@include media($mobile) {
+			font-size: 12px;}
 	}
 }
 
-// .logo {
-//   width: 20vw;
-//   padding-top: 15vh;
-//   padding-bottom: 20vh;
-//   /* media query mixin for mobile screens */
-//      @include media($mobile) {
-//        width: 50vw;
-//        padding-top: 10vh;
-//        padding-bottom: 15vh;
-//     }
-//     /* media query mixin for tablet screens */
-//        @include media($tablet) {
-//          width: 50vw;
-//          padding-top: 10vh;
-//          padding-bottom: 15vh;
-//       }
-// }
+// CTA button
+
+.cta-form {
+	position: absolute;
+	top: 80vh;
+	z-index: 10;
+	@include outer-container(100%);
+	@include shift(1);
+	@include span-columns(10);
+	text-align: center;
+}
+
+.modal-trigger {
+	h1 {
+		margin-bottom: auto;
+		display: inline;
+		padding: 10px;
+		transition: color, background .3s ease-in-out;
+		color: $white;
+		// border: 2px solid RGBA(0, 0, 0, 1);
+		border-radius: 3px;
+		background: rgba(136, 176, 75, 1);
+			font-size: 20px;
+		@include media($mobile) {
+			font-size: 16px;}
+		&:hover {
+			color: RGBA(0, 0, 0, 1);
+			background: $white;
+		}
+	}
+}
+
+.content-wrap {
+	background: $white;
+}

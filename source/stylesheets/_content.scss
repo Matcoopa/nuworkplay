@@ -2,6 +2,12 @@
 $mobile: new-breakpoint(max-width 768px 4);
 // $tablet: new-breakpoint(max-width 768px 4);
 
+.neat-center {
+  @include outer-container(100%);
+  @include span-columns(10);
+  @include shift(1);
+}
+
 .desaturate {
 	filter: gray;
 	filter: grayscale(100%);
@@ -23,7 +29,6 @@ $mobile: new-breakpoint(max-width 768px 4);
 }
 
 .logo img {
-	// @include outer-container(100%);
 	@include shift(1);
 
   width: 200px;
@@ -51,8 +56,6 @@ $mobile: new-breakpoint(max-width 768px 4);
 }
 
 .inner-wrap {
-  @include span-columns(10);
-  @include shift(1);
   padding: 50px;
   background: RGBA(228, 187, 37, 0.60);
 	background-blend-mode: difference;;
@@ -84,9 +87,6 @@ $mobile: new-breakpoint(max-width 768px 4);
 	position: absolute;
 	top: 80vh;
 	z-index: 10;
-	@include outer-container(100%);
-	@include shift(1);
-	@include span-columns(10);
 	text-align: center;
 }
 
@@ -113,4 +113,14 @@ $mobile: new-breakpoint(max-width 768px 4);
 .content-wrap {
 	position: absolute;
 	background: $white;
+	height: inherit;;
+}
+
+.content-value{
+	// @include outer-container(100%);
+	// @include span-columns(10);
+	// @include shift(1);
+	text-align: center;
+	padding-top: 5vh;
+
 }

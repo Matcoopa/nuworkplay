@@ -1,33 +1,37 @@
-
-    <div class="feat1-content neat3-span">
-      <h2>Living</h2>
-      <ul>
-        <% data.living.benefits.each do |benefit| %>
-        <li>
-          <p> <%= benefit %></p>
-        </li>
-        <% end %>
-      </ul>
-    </div>
-
-    <div class="feat2-content neat3-span">
-      <h2>Working</h2>
-      <ul>
-        <% data.working.benefits.each do |benefit| %>
-        <li>
-          <p> <%= benefit %></p>
-        </li>
-        <% end %>
-      </ul>
-    </div>
-
-    <div class="feat3-content neat3-span">
-      <h2>Playing</h2>
-      <ul>
-        <% data.playing.benefits.each do |benefit| %>
-        <li>
-          <p> <%= benefit %></p>
-        </li>
-        <% end %>
-      </ul>
-    </div>
+<div class="grid-items-lines">
+  <div class="grid-item">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
+    <h2>Living</h2>
+    <ul>
+          <% data.living.benefits.each do |benefit| %>
+          <li>
+            <p> <%= benefit %></p>
+          </li>
+          <% end %>
+        </ul>
+  </div>
+  <div class="grid-item">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
+    <h2>Working</h2>
+        <ul>
+          <% data.working.benefits.each do |benefit| %>
+          <li>
+            <p> <%= benefit %></p>
+          </li>
+          <% end %>
+        </ul>
+  </div>
+  <div class="grid-item">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="">
+    <h2>Playing</h2>
+        <ul>
+          <% data.playing.benefits.each do |benefit| %>
+          <li>
+            <p> <%= benefit %></p>
+          </li>
+          <% end %>
+        </ul>
+  </div>
+  <div class="right-cover"></div>
+  <div class="bottom-cover"></div>
+</div>

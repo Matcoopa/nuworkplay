@@ -113,11 +113,10 @@ $mobile: new-breakpoint(max-width 768px 4);
 .content-wrap {
 	position: absolute;
 	background: $white;
-	height: inherit;;
+  @include padding(5vh null 5vh null);
 }
 
 .content-value{
 	text-align: center;
-	padding-top: 5vh;
 
 }

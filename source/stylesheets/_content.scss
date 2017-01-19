@@ -117,9 +117,6 @@ $mobile: new-breakpoint(max-width 768px 4);
 }
 
 .content-value{
-	// @include outer-container(100%);
-	// @include span-columns(10);
-	// @include shift(1);
 	text-align: center;
 	padding-top: 5vh;
 

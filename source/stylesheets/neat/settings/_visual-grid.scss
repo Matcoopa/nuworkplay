@@ -4,7 +4,7 @@
 ///
 /// @type Bool
 
-$visual-grid: false;
+$visual-grid: true;
 
 /// Sets the visual grid color. Set with `!global` flag.
 ///
@@ -16,7 +16,7 @@ $visual-grid-color: red !default;
 ///
 /// @type String
 
-$visual-grid-index: back !default;
+$visual-grid-index: front !default;
 
 /// Sets the opacity property of the visual grid. Set with `!global` flag.
 ///

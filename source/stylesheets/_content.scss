@@ -8,10 +8,10 @@ $mobile: new-breakpoint(max-width 768px 4);
   @include shift(1);
 }
 
-.desaturate {
-	filter: gray;
-	filter: grayscale(100%);
-}
+// .desaturate {
+// 	filter: gray;
+// 	filter: grayscale(100%);
+// }
 
 .backgrounds div {
   position: fixed;
@@ -50,7 +50,7 @@ $mobile: new-breakpoint(max-width 768px 4);
 
 .inner-wrap {
   padding: 50px;
-  background: RGBA(228, 187, 37, 0.60);
+  background: RGBA(255, 255, 255, 0.60);
 	background-blend-mode: difference;;
   position: absolute;
   top:50%;
@@ -62,9 +62,8 @@ $mobile: new-breakpoint(max-width 768px 4);
 }
 
 .wrap {
-	color: $white;
 	h1 {
-	color: $white;
+	color: rgba(136, 176, 75, 1);
 	@include media($mobile) {
 		font-size: 20px;}
 	}
@@ -73,6 +72,7 @@ $mobile: new-breakpoint(max-width 768px 4);
 			font-size: 12px;}
 	}
 }
+
 
 // CTA button
 
@@ -104,27 +104,74 @@ $mobile: new-breakpoint(max-width 768px 4);
 
 .post-landing {
   overflow: auto;
+  min-height: 100%;
+  background: $white;
 }
 
-.content-wrap {
+.content-wrap1 {
   overflow: auto;
   position: relative;
-	background: $blue;
-  @include padding(5vh null 5vh null);
+  background: $white;
+  margin-bottom: 5vh;
+  h2 {
+    margin: 0;
+  }
 }
 
 .content-value {
 	text-align: center;
+  @include padding(5vh null 5vh null);
 }
+
+.content-wrap2 {
+  overflow: auto;
+  position: relative;
+  margin-bottom: 5vh;
+  background: transparent;
+  @include media($mobile) {
+    background: white;}
+}
+
 
 .getouch-wrap {
   position: relative;
+  text-align: center;
+  height: 100vh;
 }
 
+.getouch-content {
+  @include padding(9vh null 16vh null);
+  @include media($mobile) {
+    @include padding(9vh null 6vh null);}
+  p {
+    color: white;
+    @include media($mobile) {
+    font-size: 12px;}
+  }
+  h2 {
+    margin: 0;
+    background: white;
+    @include media($mobile) {
+    font-size: 18px;}
+  }
+}
 
 .getintouch-wrap {
+  position: relative;
+  overflow: auto;
   @include padding(2vh 25vw 2vh 25vw);
   @include media($mobile) {
     @include padding(2vh 10vw 2vh 10vw);
     };
 }
+
+#ctaForm {
+  background: RGBA(228, 187, 37, 0.60);
+  border-radius: 3px;
+  @include padding(4vh 2vw 4vh 2vw);
+  #ctaButton {
+    background-color: rgba(136, 176, 75, 1);
+    color: $white;
+  }
+}
+

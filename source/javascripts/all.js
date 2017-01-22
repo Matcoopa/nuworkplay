@@ -7,6 +7,17 @@
   analytics.page();
   }}();
 
+
+// Scroll to Form
+$(function() {
+  $("cta-form").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#ctaForm").offset().top},
+        'slow');
+  })
+});
+
+
 // $(document).ready(function(){
 
 // Init ScrollMagic

@@ -46,10 +46,6 @@ $mobile: new-breakpoint(max-width 768px 4);
   height: 100%;
   min-height: 100vh;
   width: 100%;
-    @include media($mobile) {
-      position: relative;
-      min-height: 100%;
-    };
 }
 
 .inner-wrap {
@@ -94,7 +90,6 @@ $mobile: new-breakpoint(max-width 768px 4);
 		padding: 10px;
 		transition: color, background .3s ease-in-out;
 		color: $white;
-		// border: 2px solid RGBA(0, 0, 0, 1);
 		border-radius: 3px;
 		background: rgba(136, 176, 75, 1);
 			font-size: 20px;
@@ -107,8 +102,13 @@ $mobile: new-breakpoint(max-width 768px 4);
 	}
 }
 
+.post-landing {
+  overflow: auto;
+}
+
 .content-wrap {
-	position: absolute;
+  overflow: auto;
+  position: relative;
 	background: $blue;
   @include padding(5vh null 5vh null);
 }
@@ -117,8 +117,12 @@ $mobile: new-breakpoint(max-width 768px 4);
 	text-align: center;
 }
 
+.getouch-wrap {
+  position: relative;
+}
+
+
 .getintouch-wrap {
-  position: absolute;
   @include padding(2vh 25vw 2vh 25vw);
   @include media($mobile) {
     @include padding(2vh 10vw 2vh 10vw);

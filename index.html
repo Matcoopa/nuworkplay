@@ -7,8 +7,8 @@
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Nuworkplay</title>
-    <link href="stylesheets/site-a21a1924.css" rel="stylesheet" />
-    <script src="javascripts/all-33865e62.js"></script>
+    <link href="stylesheets/site-dc941e5f.css" rel="stylesheet" />
+    <script src="javascripts/all-dc879049.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
@@ -19,24 +19,24 @@
   </head>
 
   <body>
-    <div class="backgrounds" id="slider">
-	<div class="hero-bcg desaturate"></div>
-</div>
-<div class="outer-wrap landing">
-	<div class="logo">
-		<img src="images/LogoNWP-88dcecc7.png" alt="Logonwp" />
-	</div>
-	<div class="inner-wrap neat-center">
-		<div class="wrap">
-			<h1 class="title">PULL OFF YOUR STARTUP RETREATS</h1>
-			<p>Bring new soul to your team, unleash efficient work & play experience in genuine Portugal</p>
-		</div>
-	</div>
-</div>
-
-
-<div class="cta-form neat-center">
-	<div class="modal">
+    <div class="landing">
+  <div class="backgrounds">
+    <div class="hero-bcg desaturate"></div>
+  </div>
+  <div class="outer-wrap">
+    <div class="logo">
+      <img src="images/LogoNWP-88dcecc7.png" alt="Logonwp" />
+    </div>
+    <div class="inner-wrap neat-center">
+      <div class="wrap">
+        <h1 class="title">PULL OFF YOUR STARTUP RETREATS</h1>
+        <hr class="horiz1">
+        <p>Bring new soul to your team, unleash efficient work & play experience in genuine Portugal</p>
+      </div>
+    </div>
+  </div>
+  <div class="cta-form neat-center">
+    <div class="modal">
   <label for="modal-1">
     <div class="modal-trigger">
         <h1>QUOTATION</h1>
@@ -48,12 +48,12 @@
       <div class="modal-close" for="modal-1"></div>
       <h1>Get in touch!</h1>
       <form action="https://formspree.io/matthieu@nuworkplay.com"
-      method="POST" name="getInTouchForm">
+      method="POST" name="getInTouchForm" id="ctaForm">
     <input type="text" name="name" placeholder="Your name?">
     <input type="email" name="_replyto" placeholder="Your email?">
     <textarea name="message" placeholder="Your question?"></textarea>
     <input type="text" name="_gotcha" style="display:none" />
-    <input type="submit" value="Send">
+    <input type="submit" value="Send" id="ctaButton">
 </form>
 
     </div>
@@ -61,115 +61,117 @@
 
 </div>
 
+  </div>
 </div>
 
-<div class="content-wrap">
-	<div class="content-value neat-center">
-	 <h2>Perfect culture and business match for your 2017 team's labs, design sprints, hackathons or bootcamps</h2>
+<div class="post-landing">
+  <div class="content-wrap1">
+    <div class="content-value neat-center">
+      <h2>Perfect culture and business match for your 2017 team's labs, design sprints, hackathons or bootcamps</h2>
+    </div>
   </div>
-  <div class="content-icons neat-center">
-    <div class="grid-items-lines">
+  <div class="content-wrap2">
+    <div class="content-icons neat-center">
+      <div class="grid-items-lines">
   <div class="grid-item">
     <img src="images/Living-2e6f3fd0.png" alt="Living" />
     <h2>Living</h2>
     <ul>
-          <li>
-            <p> 40mins drive from Lisbon's airport</p>
-          </li>
-          <li>
-            <p> 10-15 hosts</p>
-          </li>
-          <li>
-            <p> 2 story villa with private heated pool</p>
-          </li>
-          <li>
-            <p> Indoor fire place, outdoor BBQ</p>
-          </li>
-          <li>
-            <p> Fresh organic local fruits and vegetables - private local cook</p>
-          </li>
-        </ul>
+      <li>
+        <p> 40mins drive from Lisbon's airport</p>
+      </li>
+      <li>
+        <p> 10-15 hosts</p>
+      </li>
+      <li>
+        <p> 2 story villa with private heated pool</p>
+      </li>
+      <li>
+        <p> Indoor fire place, outdoor BBQ</p>
+      </li>
+      <li>
+        <p> Fresh organic local fruits and vegetables - private local cook</p>
+      </li>
+    </ul>
   </div>
   <div class="grid-item">
     <img src="images/Working-25bd57eb.png" alt="Working" />
     <h2>Working</h2>
-        <ul>
-          <li>
-            <p> Design sprint setup</p>
-          </li>
-          <li>
-            <p> Skype meeting room</p>
-          </li>
-          <li>
-            <p> Large co-working spaces with high-speed internet</p>
-          </li>
-          <li>
-            <p> Inspiring private work spaces</p>
-          </li>
-          <li>
-            <p> Coffee, fresh juice smoothies, water & tea</p>
-          </li>
-          <li>
-            <p> Yoga room, coach incl.</p>
-          </li>
-        </ul>
+    <ul>
+      <li>
+        <p> Design sprint setup</p>
+      </li>
+      <li>
+        <p> Skype meeting room</p>
+      </li>
+      <li>
+        <p> Large co-working spaces with high-speed internet</p>
+      </li>
+      <li>
+        <p> Inspiring private work spaces</p>
+      </li>
+      <li>
+        <p> Coffee, fresh juice smoothies, water & tea</p>
+      </li>
+      <li>
+        <p> Yoga room, coach incl.</p>
+      </li>
+    </ul>
   </div>
   <div class="grid-item">
     <img src="images/Playing-398d5204.png" alt="Playing" />
     <h2>Playing</h2>
-        <ul>
-          <li>
-            <p> Surf lessons, secret spot disclosed! All levels</p>
-          </li>
-          <li>
-            <p> Mountain biking & Hiking</p>
-          </li>
-          <li>
-            <p> Wakeboard</p>
-          </li>
-          <li>
-            <p> Beach horse riding</p>
-          </li>
-          <li>
-            <p> Stargazing basics</p>
-          </li>
-          <li>
-            <p> and more !!</p>
-          </li>
-        </ul>
+    <ul>
+      <li>
+        <p> Surf lessons, secret spot disclosed! All levels</p>
+      </li>
+      <li>
+        <p> Mountain biking & Hiking</p>
+      </li>
+      <li>
+        <p> Wakeboard</p>
+      </li>
+      <li>
+        <p> Beach horse riding</p>
+      </li>
+      <li>
+        <p> Stargazing basics</p>
+      </li>
+      <li>
+        <p> and more !!</p>
+      </li>
+    </ul>
   </div>
   <div class="right-cover"></div>
   <div class="bottom-cover"></div>
 </div>
 
+    </div>
   </div>
 
-</div>
 
-<!-- <div class="feat-header">
-	<div class="feat-bcg"></div>
-	<div class="feat-bullets grid-center">
-		<p>SEND YOUR TEAM GO SURFING, BBQ, PLAY A GAME OR WORKOUT</p>
-		<h1>BUT GET YOUR MVP, DEMO OR PRODUCT TESTING DONE</h1>
-	</div>
-</div> -->
-
-
-<!--
-
-		<article id="cb02" class="content-block">
-			<div class="wrapper grid-center">
-				<form action="https://formspree.io/matthieu@nuworkplay.com"
-      method="POST" name="getInTouchForm">
+  <div class="getouch-wrap">
+    <div class="getouch-content neat-center">
+      <p>SEND YOUR TEAM GO SURFING, BBQ, PLAY A GAME OR WORKOUT</p>
+      <h2>BUT GET YOUR MVP, DEMO OR PRODUCT TESTING DONE</h2>
+    </div>
+    <div class="getintouch-wrap">
+      <form action="https://formspree.io/matthieu@nuworkplay.com"
+      method="POST" name="getInTouchForm" id="ctaForm">
     <input type="text" name="name" placeholder="Your name?">
     <input type="email" name="_replyto" placeholder="Your email?">
     <textarea name="message" placeholder="Your question?"></textarea>
     <input type="text" name="_gotcha" style="display:none" />
-    <input type="submit" value="Send">
+    <input type="submit" value="Send" id="ctaButton">
 </form>
 
-			</div> --> <!-- .wrapper -->
-		<!-- </article> -->
+    </div>
+  </div>
+</div>
+
+
+
+
 
 <!-- </div> About NWP-->
 <!-- <p>Nuworkplay builds inspiring working spaces, experiences and outdoors activities few miles away from iconic Lisbon's beaches in Portugal</p> -->

@@ -9,8 +9,8 @@
   $medium-screen: 40em !default;
   $large-screen: 53.75em !default;
   $base-font-color: $dark-gray !default;
-  $grid-items-background: $base-background-color;
-  $grid-item-background: $base-background-color;
+  $grid-items-background: transparent;
+  $grid-item-background: transparent;
   $grid-item-border: 1px solid transparentize($base-font-color, 0.8);
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
@@ -40,19 +40,18 @@
 
     &:focus,
     &:hover {
-      background: transparentize($grid-item-color, 0.95);
-    }
+      background: $white;}
   }
 
   .grid-item img {
       display: block;
       height: 2.5em;
       margin-bottom: 1.2em;
-      opacity: 0.2;
+      opacity: 0.8;
     }
 
   .grid-item h2 {
-      color: $grid-item-color;
+      color: RGBA(228, 187, 37, 1);
       font-size: 1.3em;
       margin-bottom: 0.4em;
     }
@@ -79,7 +78,7 @@
 
   // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
   .bottom-cover {
-    background: $grid-items-background;
+    background: transparent;
     bottom: 0;
     height: 3px;
     position: absolute;
@@ -87,7 +86,7 @@
   }
 
   .right-cover {
-    background: $grid-items-background;
+    background: transparent;
     height: 100%;
     position: absolute;
     right: 0;

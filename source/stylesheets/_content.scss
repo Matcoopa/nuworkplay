@@ -128,8 +128,8 @@ $mobile: new-breakpoint(max-width 768px 4);
   position: relative;
   margin-bottom: 5vh;
   background: transparent;
-  @include media($mobile) {
-    background: white;}
+  // @include media($mobile) {
+  //   background: white;}
 }
 
 

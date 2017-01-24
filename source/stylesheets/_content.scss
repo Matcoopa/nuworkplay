@@ -163,7 +163,12 @@ $mobile: new-breakpoint(max-width 768px 4);
   @include media($mobile) {
     @include padding(2vh 10vw 2vh 10vw);
     };
+  h3 {
+    color: white;
+  }
 }
+
+
 
 #ctaForm {
   background: RGBA(228, 187, 37, 0.60);

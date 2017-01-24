@@ -1,0 +1,37 @@
+//
+$mobile: new-breakpoint(max-width 768px 4);
+// $tablet: new-breakpoint(max-width 768px 4);
+
+
+.landing-footer {
+//   background: white;
+}
+.footer-2 {
+  position: relative;
+  background: white;
+  min-height: 100%;
+  overflow: auto;
+  @include padding(2vh null 2vh null);
+}
+
+
+.footer-logo img {
+  width: 100px;
+  @include media($mobile) {
+    width: 75px};
+}
+
+.aboutus p {
+  font-size: 14px;
+  @include media($mobile) {
+    font-size: 12px};
+}
+
+.copyrights {
+  padding-bottom: 10px;
+  p {
+  font-size: 10px;
+  @include media($mobile) {
+    font-size: 8px};
+}
+  }

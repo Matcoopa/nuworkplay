@@ -38,8 +38,6 @@ GEM
     fastimage (2.0.1)
       addressable (~> 2)
     ffi (1.9.14)
-    font-awesome-sass (4.7.0)
-      sass (>= 3.2)
     haml (4.0.7)
       tilt
     hamster (3.0.0)
@@ -145,7 +143,6 @@ PLATFORMS
 DEPENDENCIES
   bitters
   bourbon
-  font-awesome-sass
   jquery-middleman
   middleman (>= 4.0.0)
   middleman-autoprefixer

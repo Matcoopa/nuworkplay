@@ -6,7 +6,7 @@
   <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>Nuworkplay</title>
-  <link href="stylesheets/site-4ab91f77.css" rel="stylesheet" />
+  <link href="stylesheets/site-b57b9a54.css" rel="stylesheet" />
   <script src="javascripts/all-5812f4f0.js"></script>
   <script src="https://use.fontawesome.com/6b450b718f.js"></script>
   <script src="https://pipedrivewebforms.com/webforms.min.js"></script>
@@ -15,7 +15,7 @@
 <body>
   <div class="landing">
   <div class="backgrounds">
-    <div class="hero-bcg desaturate"></div>
+    <div class="hero-bcg"></div>
   </div>
   <div class="outer-wrap">
     <div class="logo">
@@ -33,16 +33,28 @@
     <div class="modal">
   <label for="modal-1">
     <div class="modal-trigger" id="cta-click">
-        <h1>QUOTATION</h1>
+      <h1>QUOTATION</h1>
     </div>
   </label>
   <input class="modal-state" id="modal-1" type="checkbox" />
   <div class="modal-fade-screen">
     <div class="modal-inner">
       <div class="modal-close" for="modal-1"></div>
-      <h3>Contact us for your next startup retreat</h3>
-        <div class="pipedriveWebForms" data-pd-webforms="https://pipedrivewebforms.com/form/b6df5058038ec383c0858f93e32d408b1494067"><script src="https://pipedrivewebforms.com/webforms.min.js"></script>
-        </div>
+      <h4>Contact us for your next startup retreat</h4>
+      <form action="https://formspree.io/matthieu@nuworkplay.com"
+      method="POST" name="getInTouchForm" id="ctaForm">
+    <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="_replyto" placeholder="Your email">
+    <textarea name="message" placeholder="Question?"></textarea>
+    <input type="hidden" name="_subject" value="New submission!" />
+    <input type="hidden" name="_cc" value="matcoopa@gmail.com" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" value="Send" id="ctaButton">
+</form>
+
+
+
+
     </div>
   </div>
 
@@ -154,7 +166,7 @@
     <input type="email" name="_replyto" placeholder="Your email">
     <textarea name="message" placeholder="Question?"></textarea>
     <input type="hidden" name="_subject" value="New submission!" />
-    <input type="hidden" name="_cc" value="nuworkplay@pipedrivemail.com" />
+    <input type="hidden" name="_cc" value="matcoopa@gmail.com" />
     <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" value="Send" id="ctaButton">
 </form>
@@ -184,6 +196,5 @@
 
   </div>
   <script src="javascripts/segment_tracking-245f269a.js"></script>
-  <iframe src="https://anygrowth.com/api/anyleads/api-tracking-leads-converted/M8E8F0R0" width="0" height="0" style="display:none;"></iframe>
 </body>
 </html>

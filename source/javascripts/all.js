@@ -7,8 +7,12 @@ analytics.load("bsayEDUL1nzUER1hCGGk0PS6xZjKZhQJ");
 analytics.page();
 }}();
 
+// Init segment identity
 
-
+analytics.ready(function(){
+            var user = analytics.user();
+            var anonymousId  = user.anonymousId();
+        });
 
 // Modal activation from Bourbon/Refills
 

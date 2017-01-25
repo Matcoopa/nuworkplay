@@ -7,17 +7,13 @@
   <!-- Use title if it's in the page YAML frontmatter -->
   <title>Nuworkplay</title>
   <link href="stylesheets/site-4ab91f77.css" rel="stylesheet" />
-  <script src="javascripts/all-dc879049.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
-    <script src="https://use.fontawesome.com/6b450b718f.js"></script>
-    <script src="https://pipedrivewebforms.com/webforms.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=BioRhyme:300|Space+Mono" rel="stylesheet">
-  </head>
-  <body>
-    <div class="landing">
+  <script src="javascripts/all-5812f4f0.js"></script>
+  <script src="https://use.fontawesome.com/6b450b718f.js"></script>
+  <script src="https://pipedrivewebforms.com/webforms.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=BioRhyme:300|Space+Mono" rel="stylesheet">
+</head>
+<body>
+  <div class="landing">
   <div class="backgrounds">
     <div class="hero-bcg desaturate"></div>
   </div>
@@ -36,7 +32,7 @@
   <div class="cta-form neat-center">
     <div class="modal">
   <label for="modal-1">
-    <div class="modal-trigger">
+    <div class="modal-trigger" id="cta-click">
         <h1>QUOTATION</h1>
     </div>
   </label>
@@ -157,6 +153,8 @@
     <input type="text" name="name" placeholder="Your name">
     <input type="email" name="_replyto" placeholder="Your email">
     <textarea name="message" placeholder="Question?"></textarea>
+    <input type="hidden" name="_subject" value="New submission!" />
+    <input type="hidden" name="_bcc" value="nuworkplay@pipedrivemail.com" />
     <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" value="Send" id="ctaButton">
 </form>
@@ -166,8 +164,9 @@
     </div>
   </div>
 </div>
-<div class="landing-footer">
-  <footer class="footer-2">
+
+  <div class="landing-footer">
+    <footer class="footer-2">
   <div class="footer-wrapper neat-center">
     <div class="footer-logo">
       <img src="images/LogoNWP-88dcecc7.png" alt="Logonwp" />
@@ -183,15 +182,8 @@
   </div>
 </footer>
 
-</div>
-
-
-
-
-
-<!-- </div> About NWP-->
-<!-- <p>Nuworkplay builds inspiring working spaces, experiences and outdoors activities few miles away from iconic Lisbon's beaches in Portugal</p> -->
-
-    <iframe src="https://anygrowth.com/api/anyleads/api-tracking-leads-converted/M8E8F0R0" width="0" height="0" style="display:none;"></iframe>
-  </body>
-  </html>
+  </div>
+  <script src="javascripts/segment_tracking-245f269a.js"></script>
+  <iframe src="https://anygrowth.com/api/anyleads/api-tracking-leads-converted/M8E8F0R0" width="0" height="0" style="display:none;"></iframe>
+</body>
+</html>

@@ -38,7 +38,7 @@
       @include grid-item-columns($grid-item-columns);
         border-right: 1px solid transparentize($base-font-color, 0.8);
         border-bottom: transparent;
-        background: RGBA(255, 255, 255, 0.20);
+        background: RGBA(255, 255, 255, 0.50);
         margin-bottom: 0;
     }
 
@@ -51,17 +51,20 @@
       display: block;
       height: 2.5em;
       margin-bottom: 1.2em;
-      opacity: 0.8;
+      opacity: 0.9;
     }
 
   .grid-item h2 {
-      color: RGBA(228, 187, 37, 1);
+      color: white;
       font-size: 1.3em;
       margin-bottom: 0.4em;
+      @include media($medium-screen) {
+        color: rgba(136, 176, 75, 1);
+      }
     }
 
   .grid-item p {
-      color: transparentize($grid-item-color, 0.4);
+      color: transparentize($grid-item-color, 0.3);
       line-height: 1.5em;
 
       @include media($medium-screen) {

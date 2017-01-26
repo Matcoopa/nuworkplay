@@ -29,7 +29,11 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-slick.js', '1.5.7'
 end
 
-
+# Image upload cloudinary
+gem 'middleman-image-uploader-tag'
 
 # JQuery
 gem "jquery-middleman"
+
+# Security
+# gem 'figaro'

@@ -132,16 +132,27 @@ $mobile: new-breakpoint(max-width 768px 4);
   //   background: white;}
 }
 
-
-.getouch-wrap {
+.slides-wrap {
+  background: rgba(255, 255, 255, 1);
   position: relative;
+  overflow: auto;
+   @include padding(5vh null 5vh null);
+}
+
+.band-wrapper {
+  // @include padding(5vh nill 5vh nill);
+}
+
+.pitch-wrap {
+  position: relative;
+  overflow: auto;
   text-align: center;
 }
 
-.getouch-content {
-  @include padding(9vh null 16vh null);
-  @include media($mobile) {
-    @include padding(9vh null 6vh null);}
+.pitch-content {
+  position: relative;
+  overflow: auto;
+  @include padding(5vh null 5vh null);
   p {
     color: white;
     @include media($mobile) {
@@ -159,11 +170,11 @@ $mobile: new-breakpoint(max-width 768px 4);
   position: relative;
   overflow: auto;
   background: RGBA(228, 187, 37, 0.60);
-  @include padding(2vh 30vw 2vh 30vw);
+  @include padding(5vh 30vw 5vh 30vw);
   @include media($mobile) {
-    @include padding(2vh 10vw 2vh 10vw);
+    @include padding(5vh 10vw 5vh 10vw);
     };
-  h3 {
+  h4 {
     color: white;
   }
 }
@@ -172,7 +183,7 @@ $mobile: new-breakpoint(max-width 768px 4);
 
 #ctaForm {
   border-radius: 3px;
-  @include padding(4vh nill 4vh nill);
+  @include padding(4vh null 4vh null);
   #ctaButton {
     background-color: rgba(136, 176, 75, 1);
     color: $white;

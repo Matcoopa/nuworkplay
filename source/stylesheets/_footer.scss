@@ -23,12 +23,27 @@ $mobile: new-breakpoint(max-width 768px 4);
 
 .aboutus p {
   font-size: 14px;
+  margin-bottom: 0;
   @include media($mobile) {
     font-size: 12px};
 }
 
+.LogoRound {
+  position: relative;
+  overflow: auto;
+  text-align: center;
+  @include padding(2vh null 2vh null);
+  img {
+    height: 50px;
+    @include media($mobile) {
+    height: 30px};
+  }
+}
+
+
 .copyrights {
   padding-bottom: 10px;
+  text-align: center;
   p {
   font-size: 10px;
   @include media($mobile) {

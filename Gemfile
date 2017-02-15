@@ -35,5 +35,7 @@ gem 'middleman-image-uploader-tag'
 # JQuery
 gem "jquery-middleman"
 
+# Favicon
+gem "middleman-favicon-maker", "~> 4.0"
 # Security
 # gem 'figaro'

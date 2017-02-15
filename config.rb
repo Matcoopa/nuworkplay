@@ -95,3 +95,6 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'Explorer >= 9']
   config.ignore   = ['/stylesheets/hacks.css']
 end
+
+# SEO
+ activate :meta_tags

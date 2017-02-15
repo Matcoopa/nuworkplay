@@ -113,6 +113,8 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
+    middleman-meta-tags (0.3.0)
+      middleman-core (>= 3.0.0)
     middleman-sprockets (4.0.0.rc.3)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -178,6 +180,7 @@ DEPENDENCIES
   middleman-favicon-maker (~> 4.0)
   middleman-image-uploader-tag
   middleman-livereload
+  middleman-meta-tags
   middleman-sprockets (= 4.0.0.rc.3)
   neat
   rails-assets-jquery (= 2.1.1)!

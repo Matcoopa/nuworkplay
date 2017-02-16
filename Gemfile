@@ -38,5 +38,6 @@ gem "jquery-middleman"
 # Favicon & SEO
 gem "middleman-favicon-maker", "~> 4.0"
 gem 'middleman-meta-tags'
+gem 'middleman-search_engine_sitemap'
 # Security
 # gem 'figaro'

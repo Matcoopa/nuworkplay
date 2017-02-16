@@ -98,3 +98,6 @@ end
 
 # SEO
  activate :meta_tags
+ set :url_root, 'https://<www class="nuworkplay"></www>.com'
+ activate :search_engine_sitemap, default_priority: 0.5,
+                                  default_change_frequency: "daily"

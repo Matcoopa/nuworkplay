@@ -178,13 +178,13 @@ $mobile: new-breakpoint(max-width 768px 4);
   }
 }
 
-#ctaForm {
-  border-radius: 3px;
-  #ctaButton {
-    background-color: rgba(136, 176, 75, 1);
-    color: $white;
-  }
-}
+// #ctaForm {
+//   border-radius: 3px;
+//   #ctaButton {
+//     background-color: rgba(136, 176, 75, 1);
+//     color: $white;
+//   }
+// }
 
 a.typeform-share.button {
   float: none;
@@ -196,5 +196,8 @@ a.typeform-share.button {
   font-family: $heading-font-family;
   font-size: large;
   @include padding(7px 15px 7px 15px);
+   &:hover {
+      color: RGBA(0, 0, 0, 1);
+      background: $white;}
 }
 

@@ -186,6 +186,15 @@ $mobile: new-breakpoint(max-width 768px 4);
   }
 }
 
-#my_typeform ul {
-  margin-top: 0px
+a.typeform-share.button {
+  float: none;
+  display: inline-block;
+  border-style: none;
+  background-image: none;
+  background-color: rgba(136, 176, 75, 1);
+  color: $white;
+  font-family: $heading-font-family;
+  font-size: large;
+  @include padding(7px 15px 7px 15px);
 }
+

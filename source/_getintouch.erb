@@ -1,12 +1,35 @@
-<form action="https://formspree.io/matthieu@nuworkplay.com"
+<!-- <form action="https://formspree.io/matthieu@nuworkplay.com"
       method="POST" name="getInTouchForm" id="ctaForm">
-    <input type="text" name="name" placeholder="Your name">
-    <input type="email" name="_replyto" placeholder="Your email">
+    <input type="text" name="name" placeholder="Your name" id="userNameId">
+    <input type="email" name="_replyto" placeholder="Your company email" id="userMailId">
     <textarea name="message" placeholder="Question?"></textarea>
     <input type="hidden" name="_subject" value="New submission!" />
-    <input type="hidden" name="_cc" value="fh2p4pic@incoming.intercom.io" />
     <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" value="Send" id="ctaButton">
 </form>
 
 
+ -->
+ <% form_tag 'https://formspree.io/matthieu@nuworkplay.com', :name => 'getInTouchForm', :method => 'put' do %>
+  <% field_set_tag do %>
+    <p>
+      <%= label_tag :'your name', :class => 'first' %>
+      <%= text_field_tag :'your name', :name => 'name', :id => 'userNameId' %>
+    </p>
+    <p>
+      <%= label_tag :'company email', :class => 'first' %>
+      <%= email_field_tag :'company email', :name => '_replyto', :id => 'userMailId' %>
+    </p>
+    <!-- <p>
+      <%= label_tag :strategy %>
+      <%= select_tag :strategy, :options => ['delete', 'destroy'],
+          :selected => 'delete' %>
+    </p>
+    <p>
+      <%= check_box_tag :confirm_delete %>
+    </p> -->
+  <% end %>
+  <% field_set_tag(:class => 'buttons', :id => 'ctaButton') do %>
+    <%= submit_tag "Contact us!" %>
+  <% end %>
+<% end %>

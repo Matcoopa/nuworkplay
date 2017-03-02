@@ -12,7 +12,7 @@ analytics.ready(function(){
 
 // Get geodata for DB filling without Mixpanel tools and add custom properties to Page loaded event
 $(document).ready(function () {
-    $.getJSON('http://freegeoip.net/json/', function (location) {
+    $.getJSON('https://freegeoip.net/json/', function (location) {
       var userCity = location.city;
       var userCountry = location.country_name;
 

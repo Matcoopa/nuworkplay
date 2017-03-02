@@ -31,10 +31,15 @@
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
   <link rel="shortcut icon" href="favicon.png" />
   <link rel="icon" type="image/ico" href="favicon.ico" />
-  <link href="stylesheets/site-97927372.css" rel="stylesheet" />
-  <script src="javascripts/all-5618b1d2.js"></script><script src="javascripts/jquery.slides.min-109a0ced.js"></script>
+  <link href="stylesheets/site-a8b43c97.css" rel="stylesheet" />
   <script src="https://use.fontawesome.com/6b450b718f.js"></script>
   <link href="https://fonts.googleapis.com/css?family=BioRhyme:300|Space+Mono" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcf/1.2.3/js/jcf.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.js"></script>
 </head>
 <body>
   <div class="landing">
@@ -47,15 +52,89 @@
     </div>
     <div class="inner-wrap neat-center">
       <div class="wrap">
-        <h1 class="title">PULL OFF YOUR STARTUP RETREATS</h1>
+        <h1 class="title">PULL OFF YOUR COMPANY RETREATS</h1>
         <hr class="horiz1">
         <p>Bring new soul to your team, unleash efficient work & play experience in genuine Portugal</p>
       </div>
     </div>
   </div>
   <div class="cta-form neat-center">
-    <a class="typeform-share button" href="https://matthieugrebot.typeform.com/to/w8STjb" data-mode="1" target="_blank" id="cta-click">Quotation</a>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+    <div class="modal">
+  <label for="modal-1">
+    <div class="modal-trigger" id="cta-quotation">
+      <h1>QUOTATION</h1>
+    </div>
+  </label>
+  <input class="modal-state" id="modal-1" type="checkbox" />
+  <div class="modal-fade-screen">
+    <div class="modal-inner">
+      <div class="modal-close" for="modal-1"></div>
+      <h4>Contact us for your next startup retreat</h4>
+      <!-- <form action="https://formspree.io/matthieu@nuworkplay.com"
+      method="POST" name="getInTouchForm" id="ctaForm">
+    <input type="text" name="name" placeholder="Your name" id="userNameId">
+    <input type="email" name="_replyto" placeholder="Your company email" id="userMailId">
+    <textarea name="message" placeholder="Question?"></textarea>
+    <input type="hidden" name="_subject" value="New submission!" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="submit" value="Send" id="ctaButton">
+</form>
+
+
+-->
+<form action="https://formspree.io/matthieu@nuworkplay.com" accept-charset="UTF-8" name="getInTouchForm" id="ctaForm" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" /><fieldset><p>
+  <label for="your name" class="label-form">Your name: <span class='required'>*</span> </label>
+  <input type="text" name="name" required="required" class="field-form" id="userNameId" />
+</p>
+<p>
+  <label for="your work e-mail" class="label-form">Your work e-mail: <span class='required'>*</span> </label>
+  <input type="email" name="_replyto" required="required" class="field-form" id="userMailId" />
+</p>
+
+<p>
+  <label for="Brainstorming right now ! Any questions ?" class="first">Brainstorming right now ! any questions ?: </label>
+  <textarea name="comments" class="field-form" id="commentsId">
+</textarea>
+</p>
+<p>
+  <input type="text" name="_gotcha" style="display:none" />
+</p>
+
+<div class="expander">
+  <a href="javascript:void(0)" class="expander-trigger expander-hidden">Quick info for quotation request</a>
+  <div class="expander-content">
+    <p>
+      <label for="Check-in" class="label-form">Check-in: </label>
+      <input type="date" name="checkin" class="field-form" id="retreatCIId" />
+    </p>
+    <p>
+      <label for="Check-out" class="label-form">Check-out: </label>
+      <input type="date" name="checkout" class="field-form" id="retreatCOId" />
+    </p>
+    <p>
+      <label for="Team members (approx.)" class="label-form">Team members (approx.): </label>
+      <input type="number" name="numberteam" class="field-form" min="0" id="numberTeamId" />
+    </p>
+    <p>
+      <label for="Estimated budget">Estimated budget: </label>
+      <select name="budget" class="field-form" id="budgetId"><option value="5 000 - 10 000 EUR">5 000 - 10 000 EUR</option>
+<option value="10 001 - 15 000 EUR">10 001 - 15 000 EUR</option>
+<option value="15 001 - 20 000 EUR" selected="selected">15 001 - 20 000 EUR</option>
+<option value="20 001 - 30 000 EUR">20 001 - 30 000 EUR</option>
+<option value="30 001 - 40 000 EUR">30 001 - 40 000 EUR</option>
+<option value="&gt; 40 000 EUR">> 40 000 EUR</option>
+<option value="Not yet budgeted">Not yet budgeted</option>
+</select>
+    </p>
+  </div>
+</div>
+
+</fieldset><fieldset class="buttons" id="ctaButtonSend"><input type="submit" value="SEND" />
+</fieldset></form>
+    </div>
+  </div>
+
+</div>
 
   </div>
 </div>
@@ -157,20 +236,70 @@
   </div>
 </div>
 <div class="getintouch-wrap">
-  <h4>Contact us for your next startup retreat</h4>
-  <form action="https://formspree.io/matthieu@nuworkplay.com"
+  <div class="getintouch-innerwrap">
+    <h4>CONTACT US</h4>
+    <!-- <form action="https://formspree.io/matthieu@nuworkplay.com"
       method="POST" name="getInTouchForm" id="ctaForm">
-    <input type="text" name="name" placeholder="Your name">
-    <input type="email" name="_replyto" placeholder="Your email">
+    <input type="text" name="name" placeholder="Your name" id="userNameId">
+    <input type="email" name="_replyto" placeholder="Your company email" id="userMailId">
     <textarea name="message" placeholder="Question?"></textarea>
     <input type="hidden" name="_subject" value="New submission!" />
-    <input type="hidden" name="_cc" value="fh2p4pic@incoming.intercom.io" />
     <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" value="Send" id="ctaButton">
 </form>
 
 
+-->
+<form action="https://formspree.io/matthieu@nuworkplay.com" accept-charset="UTF-8" name="getInTouchForm" id="ctaForm" method="post"><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" /><fieldset><p>
+  <label for="your name" class="label-form">Your name: <span class='required'>*</span> </label>
+  <input type="text" name="name" required="required" class="field-form" id="userNameId" />
+</p>
+<p>
+  <label for="your work e-mail" class="label-form">Your work e-mail: <span class='required'>*</span> </label>
+  <input type="email" name="_replyto" required="required" class="field-form" id="userMailId" />
+</p>
 
+<p>
+  <label for="Brainstorming right now ! Any questions ?" class="first">Brainstorming right now ! any questions ?: </label>
+  <textarea name="comments" class="field-form" id="commentsId">
+</textarea>
+</p>
+<p>
+  <input type="text" name="_gotcha" style="display:none" />
+</p>
+
+<div class="expander">
+  <a href="javascript:void(0)" class="expander-trigger expander-hidden">Quick info for quotation request</a>
+  <div class="expander-content">
+    <p>
+      <label for="Check-in" class="label-form">Check-in: </label>
+      <input type="date" name="checkin" class="field-form" id="retreatCIId" />
+    </p>
+    <p>
+      <label for="Check-out" class="label-form">Check-out: </label>
+      <input type="date" name="checkout" class="field-form" id="retreatCOId" />
+    </p>
+    <p>
+      <label for="Team members (approx.)" class="label-form">Team members (approx.): </label>
+      <input type="number" name="numberteam" class="field-form" min="0" id="numberTeamId" />
+    </p>
+    <p>
+      <label for="Estimated budget">Estimated budget: </label>
+      <select name="budget" class="field-form" id="budgetId"><option value="5 000 - 10 000 EUR">5 000 - 10 000 EUR</option>
+<option value="10 001 - 15 000 EUR">10 001 - 15 000 EUR</option>
+<option value="15 001 - 20 000 EUR" selected="selected">15 001 - 20 000 EUR</option>
+<option value="20 001 - 30 000 EUR">20 001 - 30 000 EUR</option>
+<option value="30 001 - 40 000 EUR">30 001 - 40 000 EUR</option>
+<option value="&gt; 40 000 EUR">> 40 000 EUR</option>
+<option value="Not yet budgeted">Not yet budgeted</option>
+</select>
+    </p>
+  </div>
+</div>
+
+</fieldset><fieldset class="buttons" id="ctaButtonSend"><input type="submit" value="SEND" />
+</fieldset></form>
+  </div>
 </div>
 <div class="slides-wrap">
   <div class="band-wrapper neat-center">
@@ -209,6 +338,6 @@
 </footer>
 
   </div>
-  <script src="javascripts/segment_tracking-245f269a.js"></script>
+  <script src="javascripts/all-5c3713e8.js"></script>
 </body>
 </html>

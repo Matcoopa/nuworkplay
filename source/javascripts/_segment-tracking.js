@@ -37,7 +37,7 @@ analytics.trackLink(linkQuotation, 'Clicked Quotation CTA', {
 $( "#userNameId" ).on( "change", function() {
   var userName = document.getElementById('userNameId').value
   analytics.track('Name Filled', {
-    view: 'Landing_bottom',
+    step: 'Filling In Process',
     user_name: userName
   })
 });
@@ -45,7 +45,7 @@ $( "#userNameId" ).on( "change", function() {
 $( "#userMailId" ).on( "change", function() {
   var userMail = document.getElementById('userMailId').value
   analytics.track('Email Filled', {
-    view: 'Landing_bottom',
+    step: 'Filling In Process',
     user_email: userMail
   })
 });

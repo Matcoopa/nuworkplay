@@ -1,5 +1,15 @@
+$mobile: new-breakpoint(max-width 768px 4);
+
 @mixin grid-item-columns($columns) {
   width: (100% / 12) * $columns;
+}
+
+
+.content-icons {
+  display: flex;
+  @include media($mobile) {
+    display: block;
+  };
 }
 
 .grid-items-lines {
@@ -15,7 +25,7 @@
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
   $grid-item-color: $base-font-color;
-  $grid-item-height: 30em;
+  $grid-item-height: 100%;
 
   @include clearfix;
   position: relative;

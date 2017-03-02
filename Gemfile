@@ -32,9 +32,6 @@ end
 # Image upload cloudinary
 gem 'middleman-image-uploader-tag'
 
-# JQuery
-gem "jquery-middleman"
-
 # Favicon & SEO
 gem "middleman-favicon-maker", "~> 4.0"
 gem 'middleman-meta-tags'

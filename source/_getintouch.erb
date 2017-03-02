@@ -9,27 +9,51 @@
 </form>
 
 
- -->
- <% form_tag 'https://formspree.io/matthieu@nuworkplay.com', :name => 'getInTouchForm', :method => 'put' do %>
-  <% field_set_tag do %>
+-->
+<% form_tag 'https://formspree.io/matthieu@nuworkplay.com', :name => 'getInTouchForm', :id => 'ctaForm', :method => 'put' do %>
+<% field_set_tag do %>
+<p>
+  <%= label_tag :'your name', :required => true, :class => 'label-form' %>
+  <%= text_field_tag 'name', :required => true, :class => 'field-form', :id => 'userNameId' %>
+</p>
+<p>
+  <%= label_tag :'your work e-mail', :required => true, :class => 'label-form' %>
+  <%= email_field_tag '_replyto', :required => true, :class => 'field-form', :id => 'userMailId' %>
+</p>
+
+<p>
+  <%= label_tag :'Brainstorming right now ! Any questions ?', :class => 'first' %>
+  <%= text_area_tag 'comments', :class => 'field-form', :id => 'commentsId' %>
+</p>
+<p>
+  <%= text_field_tag '_gotcha', :style => 'display:none' %>
+</p>
+
+<div class="expander">
+  <a href="javascript:void(0)" class="expander-trigger expander-hidden">Quick info for quotation request</a>
+  <div class="expander-content">
     <p>
-      <%= label_tag :'your name', :class => 'first' %>
-      <%= text_field_tag :'your name', :name => 'name', :id => 'userNameId' %>
+      <%= label_tag :'Check-in', :class => 'label-form' %>
+      <%= date_field_tag 'checkin', :class => 'field-form', :id => 'retreatCIId' %>
     </p>
     <p>
-      <%= label_tag :'company email', :class => 'first' %>
-      <%= email_field_tag :'company email', :name => '_replyto', :id => 'userMailId' %>
-    </p>
-    <!-- <p>
-      <%= label_tag :strategy %>
-      <%= select_tag :strategy, :options => ['delete', 'destroy'],
-          :selected => 'delete' %>
+      <%= label_tag :'Check-out', :class => 'label-form' %>
+      <%= date_field_tag 'checkout', :class => 'field-form', :id => 'retreatCOId' %>
     </p>
     <p>
-      <%= check_box_tag :confirm_delete %>
-    </p> -->
-  <% end %>
-  <% field_set_tag(:class => 'buttons', :id => 'ctaButton') do %>
-    <%= submit_tag "Contact us!" %>
-  <% end %>
+      <%= label_tag :'Team members (approx.)', :class => 'label-form' %>
+      <%= number_field_tag 'numberteam', :class => 'field-form', :min => 0, :id => 'numberTeamId' %>
+    </p>
+    <p>
+      <%= label_tag :'Estimated budget' %>
+      <%= select_tag 'budget', :options => ['5 000 - 10 000 EUR', '10 001 - 15 000 EUR', '15 001 - 20 000 EUR', '20 001 - 30 000 EUR', '30 001 - 40 000 EUR', '> 40 000 EUR', 'Not yet budgeted'],
+      :selected => '15 001 - 20 000 EUR', :class => 'field-form', :id => 'budgetId' %>
+    </p>
+  </div>
+</div>
+
+<% end %>
+<% field_set_tag(:class => 'buttons', :id => 'ctaButtonSend') do %>
+<%= submit_tag "SEND" %>
+<% end %>
 <% end %>

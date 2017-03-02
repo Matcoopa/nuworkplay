@@ -19,9 +19,12 @@
   <link rel="shortcut icon" href="favicon.png" />
   <link rel="icon" type="image/ico" href="favicon.ico" />
   <%= stylesheet_link_tag :site %>
-  <%= javascript_include_tag :all, :'jquery.slides.min' %>
   <script src="https://use.fontawesome.com/6b450b718f.js"></script>
   <link href="https://fonts.googleapis.com/css?family=BioRhyme:300|Space+Mono" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcf/1.2.3/js/jcf.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.js"></script>
 </head>
@@ -30,6 +33,6 @@
   <div class="landing-footer">
     <%= partial "footer" %>
   </div>
-  <%= javascript_include_tag :segment_tracking %>
+  <%= javascript_include_tag :all %>
 </body>
 </html>

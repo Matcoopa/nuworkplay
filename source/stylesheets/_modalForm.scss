@@ -47,7 +47,7 @@
     z-index: 99999999999;
 
     @include media($large-screen) {
-      padding-top: 10em;
+      padding-top: 2em;
     }
 
     .modal-bg {
@@ -94,15 +94,14 @@
     position: relative;
     transition: opacity 0.25s ease;
     width: 95%;
-
     @include media($medium-screen) {
       max-height: 70%;
       padding: $modal-padding;
       width: 60%;
+      max-height: 90%;
     }
-
     @include media($large-screen) {
-      width: 50%;
+      width: 70%;
     }
 
     .modal-intro {
@@ -126,6 +125,11 @@
       &:last-child {
         padding: 0 2em;
       }
+    }
+
+    h4 {
+      font-size: 20px;
+      color:rgba(136, 176, 75, 1);
     }
   }
 

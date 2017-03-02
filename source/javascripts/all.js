@@ -1,31 +1,6 @@
-//= require jquery
+//= require "_jquery.slides.min"
+//= require "_segment-tracking"
+//= require "_custom-forms"
+//= require "_bourbon-scripts"
 
-
-
-
-// Modal activation from Bourbon/Refills
-
-$(function() {
-  $("#modal-1").on("change", function() {
-    if ($(this).is(":checked")) {
-      $("body").addClass("modal-open");
-    } else {
-      $("body").removeClass("modal-open");
-    }
-  });
-
-  $(".modal-fade-screen, .modal-close").on("click", function() {
-    $(".modal-state:checked").prop("checked", false).change();
-  });
-
-  $(".modal-inner").on("click", function(e) {
-    e.stopPropagation();
-  });
-});
-
-
-// JS custom forms
-$(document).ready(function(){
-    jcf.replaceAll()
-});
 

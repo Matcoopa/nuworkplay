@@ -7,11 +7,6 @@ $mobile: new-breakpoint(max-width 768px 4);
   @include shift(1);
 }
 
-.desaturate {
-	filter: gray;
-	filter: grayscale(100%);
-}
-
 .backgrounds div {
   position: fixed;
   top: 0;
@@ -169,36 +164,18 @@ $mobile: new-breakpoint(max-width 768px 4);
   position: relative;
   overflow: auto;
   background: RGBA(228, 187, 37, 0.60);
-  @include padding(5vh 30vw 5vh 30vw);
+  @include padding(5vh 25vw 5vh 25vw);
   @include media($mobile) {
     @include padding(5vh 10vw 5vh 10vw);
     };
   h4 {
-    color: white;
+    color: rgba(136, 176, 75, 1);
+    font-size: 20px;
   }
 }
 
-// #ctaForm {
-//   border-radius: 3px;
-//   #ctaButton {
-//     background-color: rgba(136, 176, 75, 1);
-//     color: $white;
-//   }
-// }
-
-a.typeform-share.button {
-  float: none;
-  display: inline-block;
-  border-style: none;
-  background-image: none;
-  background-color: rgba(136, 176, 75, 1);
-  color: $white;
-  font-family: $heading-font-family;
-  font-size: large;
-  @include padding(7px 15px 7px 15px);
+.getintouch-innerwrap {
+  background: RGBA(255, 255, 255, 0.50);
+  border-radius: 2px;
+  @include padding(15px 20px 10px 20px);
 }
-
-
-.typeform-share.button:hover {
-  color: RGBA(0, 0, 0, 1);
-  background: $white;}
